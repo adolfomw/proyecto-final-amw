@@ -1,0 +1,585 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+/*Codigo CSS */
+
+.encabezadoHeader 
+{
+color: yellow;
+text-align: center;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 60px;
+}
+
+.header__centerposition
+{
+    text-align: center;
+}
+
+.header__logo
+{
+    width: 500px;
+    height: 300px;
+}
+
+
+.animacion-h1
+{
+animation-name: flash;
+animation-duration: 2s;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+}
+
+@keyframes flash 
+{
+
+0% { 
+opacity: 1;
+    }
+50% {
+opacity: 0.4;
+    }
+100% { 
+opacity: 1;
+    }
+
+}
+
+.esqudoLogo
+{
+    width: 500px;
+    height: 300px;
+}
+
+.body__background
+{
+    background-color: yellow;
+}
+
+
+.header__navegador
+{
+display: inline;
+text-align: center;
+margin: 10px; padding: 2px; 
+border: solid blue 1px;
+font-size: 26px;   
+font-family: Arial, Helvetica, sans-serif;
+letter-spacing: 1px;
+background-color: yellow;
+}
+
+.footer_navegador
+{
+display: inline;
+justify-content: start;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 26px;
+margin: 12px;
+}
+
+
+#ejeCentral
+{
+    text-align: center;
+}
+
+.main__centerposition
+{
+    text-align: center;
+}
+
+.h2Slogan
+{
+    text-align: center;
+    color: yellow;
+    background-color: blue;
+    font-family: 'Roboto Slab', serif;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 48px;
+    word-spacing: 20px;
+    margin-top: 100px;
+}
+
+.fotoPrincipal
+{
+    border-radius: 8%;
+    width: 900px;
+    height: 800px;
+    padding: 10px;   
+    
+}
+
+.carousel-foto-estilo
+{
+    border-radius: 8%;
+    width: 1100px;
+    height: 700px;
+}
+
+.contenedor-p
+{
+    width: 950px;
+    height: 950px;
+    text-align: center;
+    padding: 10px;
+    border: white;
+}
+
+.main__carousel
+{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.h2Servicios
+{
+    text-align: center;
+    color: blue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 60px;
+    font-weight:700;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}   
+
+.cardServicios
+{   
+    border-color: blue;
+    border-width: 2px;
+    border-radius: 8%;
+}
+
+#somosEsqudo
+{
+    color: rgb(49, 49, 173);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 60px;
+    background-image: url(../imagenes/mallasdefondo2.jpg)  
+}
+
+.main__principalpicture
+{
+    border-radius: 8%;
+    width: 800px;
+    height: 500px;
+    background-color: yellow;   
+}
+
+
+.textoFormulario
+{
+    color: blue;
+    font-style: italic;
+    font-weight: 50px;
+    
+}
+
+.fontSomos
+{
+    font-family: 'Tourney', cursive;
+    color: blue;
+    font-weight: 700px;
+    font-size: 80px;
+    letter-spacing: 4px;
+    margin-top: 70px;
+}
+
+.tableTitle
+{
+    color: blue;
+    font-weight: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.fontServicios
+{
+    color: blue;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#section1
+{
+    text-align: center;
+    background-color: yellow
+}
+
+.section1-1
+{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin-bottom: 5px;
+}
+
+
+#section2
+{
+    text-align: center;
+    background-color: yellow
+}
+
+#section3
+{
+    text-align: center;
+    background-color: yellow
+}
+
+#section4
+{
+    text-align: center;
+    background-color: yellow
+}
+
+#section5
+{
+    text-align: right;
+}
+
+#section6
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+
+.esqudoCopyright
+{
+    text-align: center;
+    color: blue;
+    font-size: 30px;
+    margin-top: 40px;
+    padding: 30px;
+    background-color: yellow;
+}
+
+/* Código para menu desplegable*/
+
+/* menu */
+
+#menu ul 
+{
+    display: flex;
+    justify-content: center;
+    list-style:none;
+    margin: 0;
+    padding: 0;
+}
+
+/* items del menu */
+
+#menu ul li 
+{
+    background-color:yellow;
+}
+
+/* enlaces del menu */
+
+#menu ul a 
+{
+    display:block;
+    color:blue;
+    text-decoration:none;
+    font-weight:400;
+    font-size:26px;
+    padding:10px;
+    font-family: Arial, Helvetica, sans-serif
+    letter-spacing 1px;
+    }
+
+
+/* items del menu */
+
+#menu ul li {
+    position:relative;
+    float:left;
+    margin:0;
+    padding:0;
+}
+
+/* efecto al pasar el puntero por los items del menu */
+
+#menu ul li:hover 
+{
+    background:#5b78a7;
+}
+
+/* menu desplegable */
+
+#menu ul ul 
+{
+    display:none;
+    position:absolute;
+    top:100%;
+    left:0;
+    background:#eee;
+    padding:0;
+}
+
+   /* items del menu desplegable */
+
+#menu ul ul li 
+{
+    float:none;
+    width:150px
+}
+
+   /* enlaces de los items del menu desplegable */
+
+#menu ul ul a 
+{
+    line-height:120%;
+    padding:10px 15px;
+}
+
+   /* items del menu desplegable al pasar el ratón */
+
+#menu ul li:hover > ul 
+{
+    display:block;
+}
+
+.fondo-ventanas
+{
+    background-color: yellow;
+}
+
+ /* items del menu desplegable productos */
+
+/*.fondo-ventanas
+{
+    background-color: yellow
+}*/
+
+#estilos-ventanas 
+{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.fotosventanas-container-img 
+{
+overflow: hidden;
+height: 650px;
+}
+
+
+.fotos-ventanas
+{
+    border: 3px solid white;
+    border-radius: 8%;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    margin-right: 25px;
+    padding: 10px;
+    width: 500px;
+    height: 500px;
+    object-fit:inherit
+}
+
+.fotosventanas-container-img:hover img{
+    transform:scale(0.9,0.9);
+} 
+
+#section2-ventanas
+{   margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    background-color: yellow
+    
+    
+}
+
+#section-servicios
+{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items:center;
+    margin-top: 0px
+}
+
+/* pagina para balcones*/
+
+
+.fondo-balcones
+{
+    background-color: yellow
+    
+}
+
+.fotosbalcones-container-img 
+{
+overflow: hidden;
+height: 650px;
+}
+
+
+.fotos-balcones
+{
+    border: 3px solid white;
+    border-radius: 8%;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    margin-right: 25px;
+    padding: 10px;
+    width: 400px;
+    height: 400px;   
+    margin-left: 160px;
+    padding: 50px;    
+}
+
+#estilo-balcones
+{
+    list-style: none;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+
+.fotosbalcones-container-img:hover img{
+    transform:scale(0.9,0.9);
+} 
+
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+    body {
+      background-color: white; /* amarillo */
+}
+    }
+  /* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+    body {
+      background-color: #B2D6FF; /* Celeste */
+}
+
+}
+  /* Desktop Styles */
+@media only screen and (min-width: 961px) {
+    body {
+      background-color: white; /* Blanco */
+    }
+}
+
+
+@media (max-width: 768px)
+{
+.encabezadoHeader
+{
+    font-size: 20px;
+}
+
+#section-servicios
+{
+    flex-direction: column;
+    justify-content: center;
+}
+
+#section6
+{
+    flex-direction: column;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    
+}
+
+.esqudoLogo
+{
+    width: 300px;
+    height: 300px;
+    text-align: center;
+}
+
+}
+
+@media (max-width: 1024px)
+{
+
+#section-servicios
+{
+    flex-direction: column;
+    justify-content: center;
+}
+
+.esqudoLogo
+{
+    width: 300px;
+    height: 300px;
+    text-align: center;
+}
+
+#section6
+{
+    flex-direction: column;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    margin-left: 300px;
+
+}
+
+}
+
+
+/* declaracion de mis variables para operaciones*/
+$alto: 300px;
+$margin: 1rem;
+$background: blue;
+
+.body__backgroundproducts
+{
+    background-color: $background;
+}
+
+
+.h2Productos
+{
+    text-align: center;
+    color: yellow;
+    background-color: blue;
+    font-family: 'Roboto Slab', serif;
+    font-style: italic;
+    font-weight: 700;
+    font-size: ($alto/3)-10;
+    word-spacing: 20px;
+    margin-top: 100px;
+}
+
+.text__Form
+{
+    color: blue;
+    font-style: italic;
+    font-weight: 50px;
+    font-size: ($alto/8);
+    margin-top: ($margin)*2;
+    margin-bottom: ($margin)*1.5;
+}
+
+$redes:(
+    facebook: rgb(39, 46, 149),
+    twitter: white,
+    youtube: red,
+    );
+
+@each $red, $color in $redes{
+
+    .btn--#{$red}{
+
+    background-color: $color;
+    margin: 6px;
+    padding: 6px;
+    }
+}
