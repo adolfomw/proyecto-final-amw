@@ -529,12 +529,28 @@ height: 650px;
 }
 
 
-@media (max-width: 768px)
+/*RESPONSIVIDAD*/
+
+
+@media (max-width: 530px)
 {
 .encabezadoHeader
 {
     font-size: 20px;
 }
+
+.redes_icons--header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main__carousel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px; }
 
 #section-servicios
 {
@@ -553,8 +569,55 @@ height: 650px;
 
 .esqudoLogo
 {
-    width: 300px;
-    height: 300px;
+    width: 70px;
+    height: 700px;
+    text-align: center;
+}
+
+}
+
+
+
+@media (max-width: 768px)
+{
+.encabezadoHeader
+{
+    font-size: 40px;
+}
+
+.redes_icons--header {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#section-servicios
+{
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main__carousel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 70px; }
+
+#section6
+{
+    flex-direction: column;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    
+}
+
+.esqudoLogo
+{
+    width: 100px;
+    height: 100px;
     text-align: center;
 }
 
