@@ -14,6 +14,7 @@ font-size: 60px;
 margin-top: 50px;
 }
 
+
 .cuadrado
 {
     padding:50px;
@@ -25,6 +26,7 @@ margin-top: 50px;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    width: 100%;
     }
 
 
@@ -46,6 +48,13 @@ margin-top: 50px;
     margin-top: 40px;
 }
 
+header label {
+    display: none;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    border: 1px solid yellow;
+}
 
 .animacion-h1
 {
@@ -72,8 +81,8 @@ opacity: 1;
 
 .esqudoLogo
 {
-    width: 200px;
-    height: 180px;
+    width: 300px;
+    height: 300px;
     margin-right: 40px;
     border-radius: 5%;
 }
@@ -81,12 +90,17 @@ opacity: 1;
 .body__background
 {
     background-color: yellow;
+    background-size: 100%;
 }
 
+#btn-menu{
+    display: none;
+}
 
 .header__navegador
 {
-display: inline;
+display: flex;
+flex-direction: row;
 text-align: center;
 margin: 10px; padding: 2px; 
 border: solid blue 1px;
@@ -201,6 +215,16 @@ margin: 12px;
 }
 
 .cuadrado--servicios
+{
+    padding:10px;
+    margin: 2px;
+    background-color: #0000FF;
+    border: solid 1px blue;
+    color: white;
+    background: linear-gradient(120deg, blue 40%, cyan);
+}
+
+.cuadrado--servicios-index
 {
     padding:10px;
     margin: 2px;
@@ -508,36 +532,39 @@ height: 650px;
 } 
 
 
-/* Mobile Styles */
-@media only screen and (max-width: 400px) {
-    body {
-      background-color: white; /* amarillo */
-}
-    }
-  /* Tablet Styles */
-@media only screen and (min-width: 401px) and (max-width: 960px) {
-    body {
-      background-color: #B2D6FF; /* Celeste */
-}
-
-}
-  /* Desktop Styles */
-@media only screen and (min-width: 961px) {
-    body {
-      background-color: white; /* Blanco */
-    }
-}
-
-
 /*RESPONSIVIDAD*/
 
-
-@media (max-width: 530px)
+/* Mobile Styles */
+@media (max-width: 480px)
 {
+
 .encabezadoHeader
 {
     font-size: 20px;
 }
+
+.esqudoLogo
+{
+    width: 100px;
+    height: 100px;
+    margin-right: 40px;
+    border-radius: 5%;
+}
+
+.cuadrado
+{
+    padding:50px;
+    margin:10px;
+    background-color: #0000FF;
+    border: solid 1px blue;
+    color: white;
+    background: linear-gradient(120deg, blue 40%, cyan);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 50%;
+    }
 
 .redes_icons--header {
     display: flex;
@@ -552,6 +579,26 @@ height: 650px;
     align-items: center;
     padding-top: 40px; }
 
+.contenedor-p
+{
+    width: 450px;
+    height: 450px;
+    text-align: center;
+    padding: 10px;
+    border: white;
+}
+
+.cuadrado--servicios-index
+{
+    padding:10px;
+    margin: 2px;
+    margin-bottom: 70px;
+    background-color: #0000FF;
+    border: solid 1px blue;
+    color: white;
+    background: linear-gradient(120deg, blue 40%, cyan);
+}
+
 #section-servicios
 {
     flex-direction: column;
@@ -567,16 +614,9 @@ height: 650px;
     
 }
 
-.esqudoLogo
-{
-    width: 70px;
-    height: 700px;
-    text-align: center;
 }
 
-}
-
-
+  /* Tablet Styles */
 
 @media (max-width: 768px)
 {
@@ -585,11 +625,121 @@ height: 650px;
     font-size: 40px;
 }
 
-.redes_icons--header {
+.body__background
+{
+    background-color: yellow;
+    background-size: auto;
+}
+
+.esqudoLogo
+{
+    width: 200px;
+    height: 200px;
+    margin-right: 40px;
+    border-radius: 5%;
+}
+
+.mainpicture--index{
+    width: 800px;
+    
+    }
+
+.cuadrado
+{
+    padding:50px;
+    margin:10px;
+    background-color: #0000FF;
+    border: solid 1px blue;
+    color: white;
+    background: linear-gradient(120deg, blue 40%, cyan);
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
+    text-align: center;
+    width: 80%;
+    
+    }
+
+.footer_navegador
+{
+display: flex;
+flex-direction: column;
+justify-content: start;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 18px;
+margin: 10px;
+}
+
+.cuadrado--servicios
+{
+    padding:10px;
+    margin: 2px;
+    margin-top: 200px;
+    background-color: #0000FF;
+    border: solid 1px blue;
+    color: white;
+    background: linear-gradient(120deg, blue 40%, cyan);
+}
+
+.footer_navegador
+{
+display: flex;
+flex-direction: column;
+justify-content: left;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 26px;
+margin-left: 5px;
+}
+
+#section6
+{
+    margin-bottom: 100px;
+    margin-top: 100px;
+    width: 60px;
+    height: 60px;
+    margin-left: 300px;
+
+}
+
+/*menu hamburguesa*/
+
+header label {
+    display: block;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    }
+
+header label:hover {
+    cursor: pointer;
+    background: rgba(0,0,0,0.3);
+}
+
+
+.menu2 {
+    position: absolute;
+    background: yellow;
+    width: 70%;
+    margin-left: 0%;
+    transition: all 0.5s;
+}
+
+.menu2 ul
+{
+flex-direction: column;
+}
+
+#btn-menu:checked ~.menu2 {
+    margin:0; 
+    
+}
+
+.redes_links--header {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    margin-top: 300px;
+    margin-left: 0%;
 }
 
 #section-servicios
@@ -599,11 +749,21 @@ height: 650px;
 }
 
 .main__carousel {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-column: 1;
     justify-content: center;
     align-items: center;
-    padding-top: 70px; }
+    padding-top: 70px;
+    }
+
+.contenedor-p
+{
+    width: 720px;
+    height: 720px;
+    text-align: center;
+    padding: 10px;
+    border: white;
+}
 
 #section6
 {
@@ -611,6 +771,8 @@ height: 650px;
     justify-content: center;
     width: 100px;
     height: 100px;
+    margin-top: 170px;
+    margin-bottom: 150px;
     
 }
 
@@ -621,10 +783,47 @@ height: 650px;
     text-align: center;
 }
 
+#estilos-ventanas 
+{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
 }
+
+#estilo-balcones
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+}
+
+/* Desktop Styles */
 
 @media (max-width: 1024px)
 {
+
+.cuadrado
+{
+    padding:50px;
+    margin:10px;
+    background-color: #0000FF;
+    border: solid 1px blue;
+    color: white;
+    background: linear-gradient(120deg, blue 40%, cyan);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    }
+
 
 #section-servicios
 {
@@ -701,7 +900,6 @@ $redes:(
     padding: 6px;
     }
 }
-
 
 .h3servicios--styles{
     font-family:'Anton', sans-serif;
