@@ -183,13 +183,13 @@ header label {
   color: white;
   background: linear-gradient(120deg, blue 40%, cyan); }
 
-.cuadrado--servicios-index {
-  padding: 10px;
-  margin: 2px;
+.cuadrado--servicios--index {
+  margin-top: 200px;
   background-color: #0000FF;
   border: solid 1px blue;
   color: white;
-  background: linear-gradient(120deg, blue 40%, cyan); }
+  background: linear-gradient(120deg, blue 40%, cyan);
+  width: 100%; }
 
 #somosEsqudo {
   color: #3131ad;
@@ -413,6 +413,13 @@ header label {
     width: 100%;
     color: white; }
   .cuadrado--servicios {
+    margin-top: 200px;
+    background-color: #0000FF;
+    border: solid 1px blue;
+    color: white;
+    background: linear-gradient(120deg, blue 40%, cyan);
+    width: 100%; }
+  .cuadrado--servicios--index {
     margin-top: 200px;
     background-color: #0000FF;
     border: solid 1px blue;
