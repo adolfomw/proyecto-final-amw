@@ -1,27 +1,39 @@
 @charset "UTF-8";
+/*Selector Universal: Reseteo */
 * {
-  margin: 0;
-  padding: 0; }
+  margin: 0px;
+  padding: 0px; }
 
 /*Codigo CSS */
+/* Header */
+.body__background {
+  background-color: yellow;
+  background-size: 100%; }
+
+.cuadrado {
+  padding: 30px;
+  margin-bottom: 30px;
+  background-color: #0000FF;
+  border: solid 1px blue;
+  background: linear-gradient(120deg, blue 40%, cyan);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  color: white; }
+
+.esqudoLogo {
+  width: 350px;
+  height: 300px;
+  margin-right: 40px;
+  border-radius: 5%; }
+
 .encabezadoHeader {
   color: yellow;
   text-align: center;
   font-family: 'Russo One', sans-serif;
   font-size: 60px;
-  margin-top: 50px; }
-
-.cuadrado {
-  padding: 50px;
-  margin: 10px;
-  background-color: #0000FF;
-  border: solid 1px blue;
-  color: white;
-  background: linear-gradient(120deg, blue 40%, cyan);
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  width: 100%; }
+  margin-top: 60px; }
 
 .header__centerposition {
   text-align: center; }
@@ -56,16 +68,6 @@ header label {
   100% {
     opacity: 1; } }
 
-.esqudoLogo {
-  width: 300px;
-  height: 300px;
-  margin-right: 40px;
-  border-radius: 5%; }
-
-.body__background {
-  background-color: yellow;
-  background-size: 100%; }
-
 #btn-menu {
   display: none; }
 
@@ -90,6 +92,13 @@ header label {
   list-style-type: none;
   justify-content: space-between; }
 
+.mainpicture--index {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  width: 100%; }
+
 .footer_navegador {
   display: inline;
   justify-content: start;
@@ -100,14 +109,9 @@ header label {
 #ejeCentral {
   text-align: center; }
 
-.main__centerposition {
-  text-align: center; }
-
-.mainpicture--index {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-content: center; }
+.H2--Somos {
+  text-align: center;
+  width: 100%; }
 
 .h2Slogan {
   text-align: center;
@@ -127,7 +131,7 @@ header label {
   padding: 10px; }
 
 .carousel-foto-estilo {
-  border-radius: 2%;
+  border-radius: 8%;
   width: 1100px;
   height: 700px; }
 
@@ -154,14 +158,26 @@ header label {
   margin-top: 100px;
   margin-bottom: 50px; }
 
+.h2Productos1 {
+  text-align: center;
+  color: blue;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 60px;
+  font-weight: 700;
+  margin-top: 180px;
+  margin-bottom: 50px; }
+
 .cardServicios {
   border-color: blue;
   border-width: 2px;
   border-radius: 8%; }
 
+.card {
+  height: 413.09px;
+  margin-bottom: 50px; }
+
 .cuadrado--servicios {
   padding: 10px;
-  margin: 2px;
   background-color: #0000FF;
   border: solid 1px blue;
   color: white;
@@ -198,7 +214,8 @@ header label {
   font-weight: 700px;
   font-size: 80px;
   letter-spacing: 4px;
-  margin-top: 70px; }
+  margin-top: 70px;
+  width: 100%; }
 
 .tableTitle {
   color: blue;
@@ -373,7 +390,8 @@ header label {
 #estilo-balcones {
   list-style: none;
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   grid-column-gap: 10px;
   grid-row-gap: 10px; }
 
@@ -381,59 +399,39 @@ header label {
   transform: scale(0.9, 0.9); }
 
 /*RESPONSIVIDAD*/
-/* Mobile Styles */
-@media (max-width: 480px) {
-  .encabezadoHeader {
-    font-size: 20px; }
-  .esqudoLogo {
-    width: 100px;
-    height: 100px;
-    margin-right: 40px;
-    border-radius: 5%; }
+/* Desktop Styles */
+@media (max-width: 1024px) {
   .cuadrado {
     padding: 50px;
-    margin: 10px;
     background-color: #0000FF;
     border: solid 1px blue;
-    color: white;
     background: linear-gradient(120deg, blue 40%, cyan);
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    width: 50%; }
-  .redes_icons--header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center; }
-  .main__carousel {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top: 40px; }
-  .contenedor-p {
-    width: 450px;
-    height: 450px;
-    text-align: center;
-    padding: 10px;
-    border: white; }
-  .cuadrado--servicios-index {
-    padding: 10px;
-    margin: 2px;
-    margin-bottom: 70px;
+    width: 100%;
+    color: white; }
+  .cuadrado--servicios {
+    margin-top: 200px;
     background-color: #0000FF;
     border: solid 1px blue;
     color: white;
-    background: linear-gradient(120deg, blue 40%, cyan); }
+    background: linear-gradient(120deg, blue 40%, cyan);
+    width: 100%; }
   #section-servicios {
     flex-direction: column;
     justify-content: center; }
+  .esqudoLogo {
+    width: 300px;
+    height: 300px;
+    text-align: center; }
   #section6 {
     flex-direction: column;
     justify-content: center;
     width: 100px;
-    height: 100px; } }
+    height: 100px;
+    margin-left: 300px; } }
 
 /* Tablet Styles */
 @media (max-width: 768px) {
@@ -441,54 +439,27 @@ header label {
     font-size: 40px; }
   .body__background {
     background-color: yellow;
-    background-size: auto; }
+    background-size: 100%; }
   .esqudoLogo {
     width: 200px;
     height: 200px;
     margin-right: 40px;
     border-radius: 5%; }
   .mainpicture--index {
-    width: 800px; }
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center; }
   .cuadrado {
     padding: 50px;
-    margin: 10px;
     background-color: #0000FF;
     border: solid 1px blue;
-    color: white;
     background: linear-gradient(120deg, blue 40%, cyan);
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    text-align: center;
-    width: 80%; }
-  .footer_navegador {
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
-    margin: 10px; }
-  .cuadrado--servicios {
-    padding: 10px;
-    margin: 2px;
-    margin-top: 200px;
-    background-color: #0000FF;
-    border: solid 1px blue;
-    color: white;
-    background: linear-gradient(120deg, blue 40%, cyan); }
-  .footer_navegador {
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 26px;
-    margin-left: 5px; }
-  #section6 {
-    margin-bottom: 100px;
-    margin-top: 100px;
-    width: 60px;
-    height: 60px;
-    margin-left: 300px; }
+    width: 100%;
+    color: white; }
   /*menu hamburguesa*/
   header label {
     display: block;
@@ -508,6 +479,73 @@ header label {
     flex-direction: column; }
   #btn-menu:checked ~ .menu2 {
     margin: 0; }
+  .cuadrado--servicios--index {
+    margin-top: 200px;
+    background-color: #0000FF;
+    border: solid 1px blue;
+    color: white;
+    background: linear-gradient(120deg, blue 40%, cyan);
+    width: 100%; }
+  .cuadrado--servicios {
+    margin-top: 90px;
+    background-color: #0000FF;
+    border: solid 1px blue;
+    color: white;
+    background: linear-gradient(120deg, blue 40%, cyan);
+    width: 100%; }
+  .footer_navegador {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    margin: 10px; }
+  .h2Servicios {
+    font-size: 40px;
+    font-weight: 500;
+    margin-top: 100px;
+    margin-bottom: 50px; }
+  #section-servicios {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px; }
+  .card {
+    margin: 15px; }
+  .H2--Somos {
+    text-align: center;
+    width: 100%; }
+  .fontSomos {
+    font-family: 'Tourney', cursive;
+    color: blue;
+    font-weight: 600px;
+    font-size: 60px;
+    letter-spacing: 4px;
+    margin-top: 70px;
+    width: 100%; }
+  .main__principalpicture {
+    border-radius: 8%;
+    width: 633px;
+    height: 500px;
+    background-color: yellow; }
+  .footer_navegador {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 26px;
+    margin-left: 5px;
+    margin-bottom: 30px; }
+  .esqudoCopyright {
+    padding: 80px; }
+  #section6 {
+    padding: 40px;
+    margin-bottom: 150px;
+    margin-top: 100px;
+    width: 60px;
+    height: 60px;
+    margin-left: 300px; }
   .redes_links--header {
     display: flex;
     flex-direction: column;
@@ -518,14 +556,15 @@ header label {
     flex-direction: column;
     justify-content: center; }
   .main__carousel {
-    display: grid;
-    grid-column: 1;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 70px; }
+    padding-top: 70px;
+    border-radius: 8%; }
   .contenedor-p {
-    width: 720px;
-    height: 720px;
+    width: 680px;
+    height: 680px;
     text-align: center;
     padding: 10px;
     border: white; }
@@ -537,8 +576,8 @@ header label {
     margin-top: 170px;
     margin-bottom: 150px; }
   .esqudoLogo {
-    width: 100px;
-    height: 100px;
+    width: 250px;
+    height: 200px;
     text-align: center; }
   #estilos-ventanas {
     display: flex;
@@ -550,34 +589,6 @@ header label {
     flex-direction: column;
     justify-content: center;
     align-items: center; } }
-
-/* Desktop Styles */
-@media (max-width: 1024px) {
-  .cuadrado {
-    padding: 50px;
-    margin: 10px;
-    background-color: #0000FF;
-    border: solid 1px blue;
-    color: white;
-    background: linear-gradient(120deg, blue 40%, cyan);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    width: 100%; }
-  #section-servicios {
-    flex-direction: column;
-    justify-content: center; }
-  .esqudoLogo {
-    width: 300px;
-    height: 300px;
-    text-align: center; }
-  #section6 {
-    flex-direction: column;
-    justify-content: center;
-    width: 100px;
-    height: 100px;
-    margin-left: 300px; } }
 
 /* declaracion de mis variables para operaciones*/
 .body__backgroundproducts {
@@ -635,3 +646,98 @@ header label {
   font-family: 'Indie Flower' , cursive;
   font-size: 25px;
   color: white; }
+
+/* Mobile Styles */
+@media (max-width: 480px) {
+  .encabezadoHeader {
+    font-size: 30px; }
+  .esqudoLogo {
+    width: 250px;
+    height: 200px;
+    margin-right: 20px;
+    border-radius: 5%; }
+  .cuadrado {
+    width: 100%;
+    background-color: #0000FF;
+    border: solid 1px blue;
+    background: linear-gradient(120deg, blue 40%, cyan);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    color: white; }
+  .redes_icons--header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+  .mainpicture--index {
+    width: 110%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center; }
+  .main__carousel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+    width: 110%; }
+  .contenedor-p {
+    width: 110%;
+    text-align: center;
+    padding: 10px;
+    border: white;
+    border-radius: 5%; }
+  #section-servicios {
+    flex-direction: column;
+    justify-content: center; }
+  .cuadrado--servicios {
+    margin-top: 200px;
+    background-color: #0000FF;
+    border: solid 1px blue;
+    color: white;
+    background: linear-gradient(120deg, blue 40%, cyan);
+    width: 120%; }
+  #section2 {
+    width: 105%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin-left: 4px; }
+  .h2Servicios {
+    margin: 20px; }
+  #somosEsqudo {
+    margin-top: 30px;
+    color: #3131ad;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    width: 100%;
+    background-image: url(../imagenes/mallasdefondo2.jpg); }
+  .main__principalpicture {
+    border-radius: 8%;
+    width: 350px;
+    height: 400px;
+    background-color: yellow; }
+  #section6 {
+    flex-direction: column;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    margin-left: 130px; }
+  .h2Productos {
+    text-align: center;
+    color: yellow;
+    background-color: blue;
+    font-family: 'Roboto Slab', serif;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 65px;
+    word-spacing: 20px;
+    margin-top: 100px; }
+  #estilo-balcones {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center; } }
