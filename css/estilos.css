@@ -384,7 +384,7 @@ header label {
   padding: 10px;
   width: 400px;
   height: 400px;
-  margin-left: 160px;
+  margin-left: 200px;
   padding: 50px; }
 
 #estilo-balcones {
@@ -392,8 +392,8 @@ header label {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  grid-column-gap: 10px;
-  grid-row-gap: 10px; }
+  grid-column-gap: 5px;
+  grid-row-gap: 5px; }
 
 .fotosbalcones-container-img:hover img {
   transform: scale(0.9, 0.9); }
@@ -520,6 +520,48 @@ header label {
     padding: 10px; }
   .card {
     margin: 15px; }
+  .h2Productos1 {
+    text-align: left;
+    font-size: 30px;
+    font-weight: 400;
+    margin-top: 50px;
+    margin-bottom: 50px; }
+  .fotosventanas-container-img {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 400px; }
+  .fotosbalcones-container-img {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    width: 300px; }
+  .fotos-balcones {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-right: 0px;
+    margin-left: 0px;
+    padding: 20px;
+    width: 300px;
+    height: 300px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .fotos-ventanas {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    margin-right: 25px;
+    padding: 10px;
+    width: 300px;
+    height: 300px;
+    object-fit: inherit; }
   .H2--Somos {
     text-align: center;
     width: 100%; }
@@ -533,9 +575,14 @@ header label {
     width: 100%; }
   .main__principalpicture {
     border-radius: 8%;
-    width: 633px;
-    height: 500px;
+    width: 100%;
     background-color: yellow; }
+  #somosEsqudo {
+    width: 100%;
+    color: #3131ad;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 60px;
+    background-image: url(../imagenes/mallasdefondo2.jpg); }
   .footer_navegador {
     display: flex;
     flex-direction: column;
@@ -545,7 +592,8 @@ header label {
     margin-left: 5px;
     margin-bottom: 30px; }
   .esqudoCopyright {
-    padding: 80px; }
+    padding: 80px;
+    font-size: 20px; }
   #section6 {
     padding: 40px;
     margin-bottom: 150px;
@@ -556,7 +604,8 @@ header label {
   .redes_links--header {
     display: flex;
     flex-direction: column;
-    justify-content: left;
+    justify-content: center;
+    align-items: center;
     margin-top: 300px;
     margin-left: 0%; }
   #section-servicios {
@@ -590,12 +639,14 @@ header label {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; }
+    align-content: center;
+    width: 100%; }
   #estilo-balcones {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; } }
+    align-items: center;
+    width: 100%; } }
 
 /* declaracion de mis variables para operaciones*/
 .body__backgroundproducts {
@@ -607,8 +658,8 @@ header label {
   background-color: blue;
   font-family: 'Roboto Slab', serif;
   font-style: italic;
-  font-weight: 700;
-  font-size: 90px;
+  font-weight: 600;
+  font-size: 56.66667px;
   word-spacing: 20px;
   margin-top: 100px; }
 
@@ -616,7 +667,7 @@ header label {
   color: blue;
   font-style: italic;
   font-weight: 50px;
-  font-size: 37.5px;
+  font-size: 25px;
   margin-top: 2rem;
   margin-bottom: 1.5rem; }
 
@@ -678,7 +729,7 @@ header label {
     flex-direction: column;
     justify-content: center; }
   .mainpicture--index {
-    width: 110%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -689,11 +740,12 @@ header label {
     justify-content: center;
     align-items: center;
     padding-top: 40px;
-    width: 110%; }
+    width: 90%; }
   .contenedor-p {
-    width: 110%;
-    text-align: center;
-    padding: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
     border: white;
     border-radius: 5%; }
   #section-servicios {
@@ -705,16 +757,42 @@ header label {
     border: solid 1px blue;
     color: white;
     background: linear-gradient(120deg, blue 40%, cyan);
-    width: 120%; }
+    width: 100%; }
   #section2 {
-    width: 105%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    margin-left: 4px; }
+    font-size: 30px; }
+  .h2Slogan {
+    font-weight: 500;
+    font-size: 30px; }
   .h2Servicios {
     margin: 20px; }
+  .fotosventanas-container-img {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 400px; }
+  .fotosbalcones-container-img {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    width: 300px; }
+  .fotos-ventanas {
+    margin-top: 20px;
+    margin-bottom: 5px;
+    margin-right: 15px;
+    padding: 10px;
+    width: 300px;
+    height: 300px;
+    object-fit: inherit; }
   #somosEsqudo {
     margin-top: 30px;
     color: #3131ad;
@@ -724,27 +802,40 @@ header label {
     background-image: url(../imagenes/mallasdefondo2.jpg); }
   .main__principalpicture {
     border-radius: 8%;
-    width: 350px;
-    height: 400px;
+    width: 100%;
     background-color: yellow; }
   #section6 {
     flex-direction: column;
     justify-content: center;
     width: 70px;
     height: 70px;
-    margin-left: 130px; }
+    margin-left: 70px; }
   .h2Productos {
     text-align: center;
     color: yellow;
     background-color: blue;
     font-family: 'Roboto Slab', serif;
     font-style: italic;
-    font-weight: 500;
-    font-size: 65px;
+    font-weight: 400;
+    font-size: 30px;
     word-spacing: 20px;
     margin-top: 100px; }
+  #estilo-ventanas {
+    text-align: center; }
   #estilo-balcones {
     display: flex;
     flex-direction: column;
-    justify-content: left;
-    align-items: center; } }
+    justify-content: center;
+    align-items: center;
+    width: 100%; }
+  .redes_links--header {
+    margin-top: 350px;
+    margin-bottom: 50px;
+    margin-left: 0%; }
+  .esqudoCopyright {
+    padding: 80px;
+    font-size: 20px; }
+  #section3 {
+    display: none; }
+  .fontSomos {
+    margin-top: 0px; } }
